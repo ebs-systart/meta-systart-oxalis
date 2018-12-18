@@ -1,0 +1,16 @@
+diff --git a/drivers/staging/fsl_ppfe/Makefile b/drivers/staging/fsl_ppfe/Makefile
+index efffe0c..a5a2eec 100644
+--- a/drivers/staging/fsl_ppfe/Makefile
++++ b/drivers/staging/fsl_ppfe/Makefile
+@@ -25,7 +25,7 @@ EXTRA_CFLAGS +=  -I$(src)/include  -I$(src) -DCOMCERTO_2000 -DCONFIG_PLATFORM_LS
+ 
+ EXTRA_LDFLAGS += -T$(srctree)/$(src)/control_link.lds
+ 
+-obj-m += pfe.o
++obj-$(CONFIG_FSL_PPFE) += pfe.o
+ 
+ pfe-y += pfe_mod.o \
+ 	pfe_hw.o \
+-- 
+2.7.4
+

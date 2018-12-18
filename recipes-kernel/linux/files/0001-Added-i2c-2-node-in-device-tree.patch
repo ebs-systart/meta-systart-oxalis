@@ -1,0 +1,18 @@
+diff --git a/arch/arm64/boot/dts/freescale/fsl-ls1012a-oxalis.dts b/arch/arm64/boot/dts/freescale/fsl-ls1012a-oxalis.dts
+index 36becf7..be156b7 100644
+--- a/arch/arm64/boot/dts/freescale/fsl-ls1012a-oxalis.dts
++++ b/arch/arm64/boot/dts/freescale/fsl-ls1012a-oxalis.dts
+@@ -116,6 +116,10 @@
+ 	};
+ };
+ 
++&i2c1 {
++	status = "okay";
++};
++
+ &qspi {
+ 	num-cs = <2>;
+ 	bus-num = <0>;
+-- 
+1.9.1
+

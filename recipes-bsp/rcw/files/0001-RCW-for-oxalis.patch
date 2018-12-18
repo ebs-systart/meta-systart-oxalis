@@ -1,0 +1,57 @@
+diff --git a/ls1012aoxalis/N_SSNP_3305/PBL_0x33_0x05_800_250_1000_default.bin b/ls1012aoxalis/N_SSNP_3305/PBL_0x33_0x05_800_250_1000_default.bin
+new file mode 100644
+index 0000000000000000000000000000000000000000..22480e0f790f5a8ed83adbc445c1c3aa675d6b12
+GIT binary patch
+literal 152
+zcmZQze8(8NDs&YC5O9DIh{eFb!@zKWfq~VSK?2Nm0FywX&=n{H1PYCZz%+=M24)F3
+zu&{-5GB5}P#4v(rAOP~`04WKUaLxve0ERmpuYlr=3=C55I2o827$Sh`fIJ2f2A@tI
+S2Yw(cl#?To!Qolu9T@-)#S^Lk
+
+literal 0
+HcmV?d00001
+
+diff --git a/ls1012aoxalis/README b/ls1012aoxalis/README
+new file mode 100644
+index 0000000..b2b0051
+--- /dev/null
++++ b/ls1012aoxalis/README
+@@ -0,0 +1,36 @@
++The RCW directories names for the LS1012AFRDM boards conform to the following
++naming convention:
++
++a_bcde_f:
++
++a = 'R' indicates RGMII 
++    'N' indicates not available/not used
++
++b = What is available in SerDes1 Lane0
++c = What is available in SerDes1 Lane1
++d = What is available in SerDes1 Lane2
++e = What is available in SerDes1 Lane2
++
++For the Slots (c..j):
++ 'N' is NULL, not available/not used
++ 'P' is PCIe
++ 'S' is SGMII
++ 'H' is SATA
++
++Serdes1 protocol (k):
++f = 'hex value of serdes protocol value'
++
++
++BIN   Core/Platform/DDR
++Bin1: 800MHz/250MHz/1000MT/s
++
++Files naming convention
++=============================
++PBL_f_g_x_y_z_p.bin
++x = Core frequency
++y = platform frequency
++z = DDR frequency
++
++p = default or any spefic information.
++
++for example: PBL_0x33_0x05_800_250_1000_default.bin
+-- 
+1.9.1
+
